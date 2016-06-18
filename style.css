@@ -71,6 +71,10 @@ table {
   overflow: scroll;
 }
 
+.date-block {
+  width: 100px;
+}
+
 #left-container {
   float: left;
   background: #ddd6f3; /* fallback for old browsers */
