@@ -116,6 +116,10 @@ and (min-width : 321px) {
     text-align: center;
   }
 
+  .scrollable {
+    overflow: hidden
+  }
+
   #left-container {
     height: 250px;
   }
