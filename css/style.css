@@ -91,19 +91,6 @@ table {
   color: #927dd9; /* fallback for old browsers */
 }
 
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen
-and (min-device-width : 320px)
-and (max-device-width : 480px) {
-/* Styles */
-}
-
-/* Smartphones (landscape) ----------- */
-@media only screen
-and (min-width : 321px) {
-/* Styles */
-}
-
 @media (max-width: 960px) {
   .fill-half {
     width: 100%
