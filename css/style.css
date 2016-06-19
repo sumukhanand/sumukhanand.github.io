@@ -117,7 +117,7 @@ and (min-width : 321px) {
   }
 
   .scrollable {
-    overflow: hidden
+    overflow: hidden;
   }
 
   #left-container {
