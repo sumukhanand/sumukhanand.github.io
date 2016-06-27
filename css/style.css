@@ -31,6 +31,17 @@ table p {
   margin: 0;
 }
 
+.fake-button {
+  background: transparent;
+  color: inherit;
+  border-color: inherit;
+  border-style: solid;
+  border-radius: 5px;
+  border-width: 1px;
+  padding: 10px 25px;
+}
+
+
 .fill-half {
   position: relative;
   height: 100%;
@@ -108,11 +119,11 @@ table p {
   }
 
   .scrollable {
-    overflow: hidden;
+    overflow: visible;
   }
 
   #left-container {
-    height: 250px;
+    height: 300px;
   }
 
   #left-container p {
