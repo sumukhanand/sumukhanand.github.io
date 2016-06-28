@@ -1,15 +1,30 @@
+// out: ../css/style.css, sourcemap: false, compress: false
+
+//----- COLORS -----//
+@gradient-color-one: #ddd6f3;
+@gradient-color-two: #faaca8;
+@text-color: #ffffff;
+
+//----- TEXT -----//
+@font-family: 'Roboto';
+@font-style: sans-serif;
+
+
+//----- ELEMENTS -----//
 body {
   padding: 0;
   margin: 0;
   height: 100%;
   width: 100%;
-  font-family: 'Roboto', sans-serif;
+  font-family: @font-family, @font-style;
 }
+
 table {
   width: 100%;
   font-size: 0.75em;
   color: inherit;
 }
+
 .fill-half {
   position: relative;
   height: 100%;
@@ -17,6 +32,7 @@ table {
   margin: 0;
   padding: 0;
 }
+
 .vh-center {
   position: absolute;
   top: 50%;
@@ -24,25 +40,33 @@ table {
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
 .bottom-center {
   position: absolute;
   bottom: 1em;
   width: 100%;
   text-align: center;
 }
+
 .container {
   margin: 3% 10%;
 }
+
 .section {
   margin-top: 1.5em;
 }
+
 .scrollable {
   overflow: scroll;
 }
+
+
+//----- TEXT -----//
 p {
   line-height: 150%;
   font-size: 0.9em;
 }
+
 a {
   color: inherit;
   font-style: italic;
@@ -51,15 +75,18 @@ a {
 a:hover {
   text-decoration: line-through;
 }
+
 .h1 {
   margin: 0.6em 0;
   font-size: 3em;
 }
+
 .h2 {
   margin: 0.5em 0;
   font-size: 1.25em;
-  color: #faaca8;
+  color: @gradient-color-two;
 }
+
 .fake-button {
   background: transparent;
   color: inherit;
@@ -69,44 +96,53 @@ a:hover {
   border-width: 1px;
   padding: 10px 25px;
 }
+
 .date-block {
   width: 100px;
 }
+
+//----- SINGLE ELEMENTS -----//
+
 #left-container {
   float: left;
-  background: #ddd6f3;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #ddd6f3, #faaca8);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #ddd6f3, #faaca8);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color: #ffffff;
+  background: @gradient-color-one; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, @gradient-color-one , @gradient-color-two); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, @gradient-color-one , @gradient-color-two); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: @text-color;
 }
+
 #right-container {
   float: right;
-  background: #ffffff;
-  color: #927dd9;
-  /* fallback for old browsers */
+  background: @text-color;
+  color: #927dd9; /* fallback for old browsers */
 }
+
+
+//----- RESPONSIVE -----//
 @media (max-width: 960px) {
   .fill-half {
-    width: 100%;
+    width: 100%
   }
+
   .bottom-center {
     position: absolute;
     bottom: 0.25em;
     width: 100%;
     text-align: center;
   }
+
   .scrollable {
     overflow: visible;
   }
+
   #left-container {
     height: 300px;
   }
+
   #left-container p {
     line-height: 100%;
   }
+
   #left-container .h1 {
     margin: 0.1em 0;
   }
