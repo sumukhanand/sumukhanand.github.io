@@ -1,2 +1,2 @@
 # sumukhanand.github.io
-Single-page resume
+Custom single-page resume on GitHub Pages for Sumukh Anand
