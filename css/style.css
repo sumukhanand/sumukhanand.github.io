@@ -58,7 +58,7 @@ a:hover {
 .h2 {
   margin: 0.5em 0;
   font-size: 1.25em;
-  color: #faaca8;
+  color: #2C5364;
 }
 .fake-button {
   background: transparent;
@@ -74,18 +74,18 @@ a:hover {
 }
 #left-container {
   float: left;
-  background: #ddd6f3;
+  background: #203A43;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #ddd6f3, #faaca8);
+  background: -webkit-linear-gradient(to left, #203A43, #2C5364);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #ddd6f3, #faaca8);
+  background: linear-gradient(to left, #203A43, #2C5364);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: #ffffff;
 }
 #right-container {
   float: right;
   background: #ffffff;
-  color: #927dd9;
+  color: #203A43;
   /* fallback for old browsers */
 }
 @media (max-width: 960px) {
